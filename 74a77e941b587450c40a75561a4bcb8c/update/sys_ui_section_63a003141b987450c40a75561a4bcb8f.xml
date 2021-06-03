@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="63a003141b987450c40a75561a4bcb8f" sys_domain="global" table="x_unis2_cmp_svc_catalog" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:42</sys_created_on>
+            <sys_id>c03d1e1edbdcf81028ea5eea4b96198b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>environment</element>
+            <position>1</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:43</sys_created_on>
+            <sys_id>8c3d1e1edbdcf81028ea5eea4b96198b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_network</element>
+            <position>2</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:43</sys_created_on>
+            <sys_id>003d1e1edbdcf81028ea5eea4b96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_plan</element>
+            <position>3</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:43</sys_created_on>
+            <sys_id>803d1e1edbdcf81028ea5eea4b96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ou</element>
+            <position>4</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:43</sys_created_on>
+            <sys_id>043d1e1edbdcf81028ea5eea4b96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>backup</element>
+            <position>5</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:43</sys_created_on>
+            <sys_id>843d1e1edbdcf81028ea5eea4b96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>monitoring</element>
+            <position>6</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:43</sys_created_on>
+            <sys_id>083d1e1edbdcf81028ea5eea4b96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>patching</element>
+            <position>7</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:43</sys_created_on>
+            <sys_id>883d1e1edbdcf81028ea5eea4b96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>8</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:43</sys_created_on>
+            <sys_id>0c3d1e1edbdcf81028ea5eea4b96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:43</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>9</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:43</sys_created_on>
+            <sys_id>8c3d1e1edbdcf81028ea5eea4b96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>10</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:43</sys_created_on>
+            <sys_id>003d1e1edbdcf81028ea5eea4b96198d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:43</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>11</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:43</sys_created_on>
+            <sys_id>803d1e1edbdcf81028ea5eea4b96198d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:43</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_domain</element>
+            <position>12</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:43</sys_created_on>
+            <sys_id>043d1e1edbdcf81028ea5eea4b96198d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>13</position>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-25 21:00:43</sys_created_on>
+            <sys_id>843d1e1edbdcf81028ea5eea4b96198d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unis2_cmp_svc_catalog" sys_domain="global" view="Default view">63a003141b987450c40a75561a4bcb8f</sys_ui_section>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-25 21:00:43</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_unis2_cmp_svc_catalog</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-19 18:27:55</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>63a003141b987450c40a75561a4bcb8f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_unis2_cmp_svc_catalog</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="CMP Service Catalog" source="x_unis2_cmp_svc">74a77e941b587450c40a75561a4bcb8c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CMP Service Catalog">74a77e941b587450c40a75561a4bcb8c</sys_scope>
+            <sys_update_name>sys_ui_section_63a003141b987450c40a75561a4bcb8f</sys_update_name>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-19 18:27:55</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

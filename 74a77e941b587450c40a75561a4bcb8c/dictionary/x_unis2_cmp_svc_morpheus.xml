@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Morpheus" max_length="40" name="x_unis2_cmp_svc_morpheus" sizeclass="0" type="collection">
+        <element label="Blueprint Description" max_length="255" name="blueprint_description" type="string"/>
+        <element label="Blueprint ID" max_length="40" name="blueprint_id" type="integer"/>
+        <element label="Blueprint Name" max_length="40" name="blueprint_name" type="string"/>
+        <element label="domain" max_length="32" name="domain" type="domain_id"/>
+        <element label="password" max_length="40" name="password" type="password"/>
+        <element label="URL" max_length="255" name="url" type="string"/>
+        <element label="username" max_length="40" name="username" type="string"/>
+        <index name="index">
+            <element name="domain"/>
+        </index>
+    </element>
+</database>

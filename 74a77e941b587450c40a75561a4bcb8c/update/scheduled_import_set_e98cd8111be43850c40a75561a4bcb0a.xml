@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="scheduled_import_set">
+    <scheduled_import_set action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <concurrent_import>false</concurrent_import>
+        <condition/>
+        <conditional>false</conditional>
+        <data_source display_value="Morpheus Blueprints">36466e301b24b450c40a75561a4bcb74</data_source>
+        <entered_time/>
+        <map/>
+        <name>Morpheus Import</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <order/>
+        <parent/>
+        <partition_method>roundRobin</partition_method>
+        <partition_script><![CDATA[(function partitionHash(import_set_row) {
+
+	// Add your code here
+	
+	// eg:
+	// return import_set_row.u_important_category;
+	// This would ensure all rows with the same 'u_important_category' value will be in the same Import Set.
+
+	 return import_set_row.sys_import_row;
+
+})(import_set_row);]]></partition_script>
+        <partition_size/>
+        <post_script/>
+        <post_script_bool>false</post_script_bool>
+        <pre_script/>
+        <pre_script_bool>false</pre_script_bool>
+        <run_as display_value="uisc3Admin Uis">68ea02b81b60b450c40a75561a4bcb8a</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2021-06-03 19:20:21</run_start>
+        <run_time>1970-01-02 08:30:00</run_time>
+        <run_type>daily</run_type>
+        <synchronize_inserts>true</synchronize_inserts>
+        <sys_class_name>scheduled_import_set</sys_class_name>
+        <sys_created_by>sn_user</sys_created_by>
+        <sys_created_on>2021-06-03 19:22:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e98cd8111be43850c40a75561a4bcb0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Morpheus Import</sys_name>
+        <sys_package display_value="CMP Service Catalog" source="x_unis2_cmp_svc">74a77e941b587450c40a75561a4bcb8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CMP Service Catalog">74a77e941b587450c40a75561a4bcb8c</sys_scope>
+        <sys_update_name>scheduled_import_set_e98cd8111be43850c40a75561a4bcb0a</sys_update_name>
+        <sys_updated_by>sn_user</sys_updated_by>
+        <sys_updated_on>2021-06-03 19:22:22</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </scheduled_import_set>
+</record_update>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="patching" table="x_unis2_cmp_svc_catalog" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>patching</element>
+            <name>x_unis2_cmp_svc_catalog</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-19 18:38:53</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>c4330bd41b987450c40a75561a4bcb30</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>patching</sys_name>
+            <sys_package display_value="CMP Service Catalog" source="x_unis2_cmp_svc">74a77e941b587450c40a75561a4bcb8c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CMP Service Catalog">74a77e941b587450c40a75561a4bcb8c</sys_scope>
+            <sys_update_name>sys_choice_x_unis2_cmp_svc_catalog_patching</sys_update_name>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-19 18:38:53</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>patching</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No Patching</label>
+            <language>en</language>
+            <name>x_unis2_cmp_svc_catalog</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-20 14:20:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc51d76c1b54f450c40a75561a4bcbaa</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-20 14:20:12</sys_updated_on>
+            <value>NO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>patching</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Win SUS</label>
+            <language>en</language>
+            <name>x_unis2_cmp_svc_catalog</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-19 18:38:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8c330bd41b987450c40a75561a4bcb2f</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-20 14:19:53</sys_updated_on>
+            <value>WSUS</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

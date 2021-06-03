@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="CMP Catalog">ff6932981b587450c40a75561a4bcb4f</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Catalogs</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_unis2_cmp_svc_catalog</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_unis2_cmp_svc.catalog_user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>sn_user</sys_created_by>
+        <sys_created_on>2021-05-19 17:56:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7f6932981b587450c40a75561a4bcb60</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>CMP Catalogs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CMP Service Catalog" source="x_unis2_cmp_svc">74a77e941b587450c40a75561a4bcb8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CMP Service Catalog">74a77e941b587450c40a75561a4bcb8c</sys_scope>
+        <sys_update_name>sys_app_module_7f6932981b587450c40a75561a4bcb60</sys_update_name>
+        <sys_updated_by>sn_user</sys_updated_by>
+        <sys_updated_on>2021-05-19 19:06:00</sys_updated_on>
+        <timeline_page/>
+        <title>CMP Catalogs</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

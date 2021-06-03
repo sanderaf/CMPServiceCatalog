@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>accessToken</name>
+        <rest_message_function display_value="GET">c36c2c52db54f81028ea5eea4b9619ff</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>sn_user</sys_created_by>
+        <sys_created_on>2021-05-25 21:53:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e8596adedb103c1028ea5eea4b9619b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>accessToken</sys_name>
+        <sys_package display_value="CMP Service Catalog" source="x_unis2_cmp_svc">74a77e941b587450c40a75561a4bcb8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CMP Service Catalog">74a77e941b587450c40a75561a4bcb8c</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_e8596adedb103c1028ea5eea4b9619b3</sys_update_name>
+        <sys_updated_by>sn_user</sys_updated_by>
+        <sys_updated_on>2021-05-25 21:54:26</sys_updated_on>
+        <type>string</type>
+        <value>bcabac23-035b-4866-9083-f8c4eb7c426b</value>
+    </sys_rest_message_fn_parameters>
+</record_update>

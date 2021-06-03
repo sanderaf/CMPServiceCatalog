@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="Morph-Provision Item">ae60ac431bd8b810c40a75561a4bcb83</child>
+        <cloned>2021-05-27 19:51:01</cloned>
+        <last_validated>2021-05-27 19:51:01</last_validated>
+        <parent display_value="CSM SC Catalog Item">ec837c713bbb1300bfe04d72f3efc4d1</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $location,$timeout,spUtil) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.trackPageAnalytics = function(eventName) {
+		try {
+			window.GlideWebAnalytics.trackEvent('com.sn_customerservice', 'outlook', eventName, 1);
+		} catch(e) {
+			console.warn(JSON.stringify(e));
+		}
+	};
+	
+	var rpForm;
+	if($scope.portal.url_suffix == "csm_outlook"){
+	  $scope.$on('spModel.gForm.initialized', function (e, gFormInstance) { 
+		rpForm =  gFormInstance;
+		if(c.data.rpContact){
+			 $timeout(function(){
+			    rpForm.setValue("email",c.data.emailid);
+				  rpForm.setReadOnly("email",true);
+		    },3000);
+		 }
+		
+		if(c.data.rpCase){
+		   $timeout(function(){
+			    rpForm.setValue("contact",c.data.contactId);
+			    rpForm.setValue("account",c.data.accountId);
+				  rpForm.setValue("short_description",c.data.shortDescription);
+			
+			    rpForm.setReadOnly("contact",true);
+			    rpForm.setReadOnly("account",true);
+		   },3000);
+		
+	   }
+	});
+	}
+	
+	/*
+	 *Listening to $sp.sc_cat_item.submitted 
+	 */
+	$scope.$on("$sp.sc_cat_item.submitted", function(event, data){	
+		
+		if($scope.portal.url_suffix == "csm_outlook"){
+		   if(c.data.rpContact){
+				   $scope.server.get({cgen_id: data.sys_id}).then(function(response){
+				
+				 if(response.data.generatedContactRecord){
+					 $scope.trackPageAnalytics('contact.create');
+					  spUtil.addInfoMessage(c.data.contactCreateSucsMsg);
+					 $scope.$emit('viewContact');
+				 }
+				else {
+					  spUtil.addErrorMessage(c.data.contactCreateFailMsg);
+					  $scope.$emit('loadCreateContact');
+						}
+					 
+			 });
+		     }
+		   if(c.data.rpCase){
+		      c.data.setChannel=true;
+		      c.data.caseId=data.sys_id;
+			  $scope.server.update();
+			  $scope.trackPageAnalytics('case.create')
+		      $scope.$emit('viewCases',{showMoreCases:false});
+		      $scope.$emit("caseCreated", "${Case }" + data.number + "${ successfully created.}");
+		      }
+		}
+		else{
+			
+		//TODO: Change when STRY6219674 has been implemented
+		$scope.server.get({action: 'get_case',requestId: data.sys_id}).then(function(response) {
+			if(response.data.caseId){
+				$location.search("id="+ c.options.page_id + "&amp;is_new_order=true&amp;table=sn_customerservice_case&amp;sys_id=" + response.data.caseId);
+			}
+			else if(c.options.view_type == 'ec_view'){
+				$location.search("id="+ c.options.page_id + "&amp;is_new_order=true&amp;table=" + data.table + "&amp;sys_id=" + data.sys_id);
+			}
+			else{
+				if (data.redirect_portal_url) {
+					//In case of record producer having a redirect URL, use the redirect URL from the record
+					//producer instead of redirecting to ticket page.
+					var rUrl = data.redirect_portal_url;
+					$location.url(data.redirect_portal_url);
+				} else {
+					//This is for record producer. When the parent is not set, the RP redirects to the ticket page for the table and sys id. 
+					$location.search("id=ticket" + "&amp;is_new_order=true&amp;table=" + data.table + "&amp;sys_id=" + data.sys_id);
+				}
+			}
+		});
+		}
+		
+	});
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;csm-sc-cat-item&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;CSM SC Catalog Item&lt;/name&gt;&lt;option_schema&gt;[{"page_id":"csm_ticket"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_internal,snc_external&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var properties = {};
+	properties.show_add_cart_button = "false";
+	properties.auto_redirect = "false";
+	
+	data.contactCreateFailMsg = gs.getMessage("Contact creation failed");
+	if(input &amp;&amp; input.cgen_id){
+		var gcr = new GlideRecordSecure('customer_contact');
+		gcr.addQuery('sys_id',input.cgen_id);
+		gcr.query();
+		if(gcr.hasNext())
+			data.generatedContactRecord = true;
+		
+	}
+	
+	if(input &amp;&amp; input.setChannel){
+		var cgr = new GlideRecord('sn_customerservice_case');
+        if(cgr.get(input.caseId)){
+           cgr.setValue("contact_type","email");
+           cgr.update();
+        }
+	}
+	
+	if(input &amp;&amp; input.rpOutContactSysid){
+	     properties.sys_id= input.rpOutContactSysid;
+		   data.rpContact=true;
+	}
+	if(input &amp;&amp; input.rpOutCaseSysid){
+	     properties.sys_id= input.rpOutCaseSysid;
+		   data.rpCase=true;
+	}
+	if(input &amp;&amp; input.contactId)
+	    data.contactId=input.contactId;
+	if(input &amp;&amp; input.accountId)
+	    data.accountId=input.accountId;
+	
+	if(input &amp;&amp; input.short_description)
+		   data.shortDescription = input.short_description;
+	
+	if(input &amp;&amp; input.emailId)
+		   data.emailid = input.emailId;
+	data.contactCreateSucsMsg = gs.getMessage("Contact created successfully");
+    data.catItemWidget = $sp.getWidget("widget-sc-cat-item-v2", properties);
+	options.page_id = options.page_id || "csm_ticket";
+	
+	//TODO: Change when STRY6219674 has been implemented
+	if(input &amp;&amp; input.action == "get_case"){
+		var gr = new GlideRecord("sc_request");
+		if(gr.get(input.requestId))
+			data.caseId = gr.getValue("parent");
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-08 22:35:39&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;ec837c713bbb1300bfe04d72f3efc4d1&lt;/sys_id&gt;&lt;sys_mod_count&gt;48&lt;/sys_mod_count&gt;&lt;sys_name&gt;CSM SC Catalog Item&lt;/sys_name&gt;&lt;sys_package display_value="Customer Service Base Portal" source="com.glide.service-portal.customer-service-base"&gt;1d0b4cd3dba20c509dff7709689619ae&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_ec837c713bbb1300bfe04d72f3efc4d1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-26 07:02:55&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;sp-widget widget="data.catItemWidget"&gt;&lt;/sp-widget&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>sn_user</sys_created_by>
+        <sys_created_on>2021-05-27 19:51:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fa60a4c31bd8b810c40a75561a4bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ae60ac431bd8b810c40a75561a4bcb83</sys_name>
+        <sys_package display_value="CMP Service Catalog" source="x_unis2_cmp_svc">74a77e941b587450c40a75561a4bcb8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CMP Service Catalog">74a77e941b587450c40a75561a4bcb8c</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_fa60a4c31bd8b810c40a75561a4bcb57</sys_update_name>
+        <sys_updated_by>sn_user</sys_updated_by>
+        <sys_updated_on>2021-05-27 19:51:01</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

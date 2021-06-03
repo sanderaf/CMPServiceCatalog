@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>sn_user</sys_created_by>
+        <sys_created_on>2021-05-19 17:56:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>887932981b587450c40a75561a4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_unis2_cmp_svc_catalog.x_unis2_cmp_svc.catalog_user</sys_name>
+        <sys_package display_value="CMP Service Catalog" source="x_unis2_cmp_svc">74a77e941b587450c40a75561a4bcb8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CMP Service Catalog">74a77e941b587450c40a75561a4bcb8c</sys_scope>
+        <sys_security_acl display_value="x_unis2_cmp_svc_catalog">047932981b587450c40a75561a4bcb65</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_887932981b587450c40a75561a4bcb85</sys_update_name>
+        <sys_updated_by>sn_user</sys_updated_by>
+        <sys_updated_on>2021-05-19 17:56:17</sys_updated_on>
+        <sys_user_role display_value="x_unis2_cmp_svc.catalog_user" name="x_unis2_cmp_svc.catalog_user">3a697e581b587450c40a75561a4bcbaa</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

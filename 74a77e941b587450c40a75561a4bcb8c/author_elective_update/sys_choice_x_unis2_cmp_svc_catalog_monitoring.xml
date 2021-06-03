@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="monitoring" table="x_unis2_cmp_svc_catalog" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>monitoring</element>
+            <name>x_unis2_cmp_svc_catalog</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-19 18:38:53</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>37230bd41b987450c40a75561a4bcb17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>monitoring</sys_name>
+            <sys_package display_value="CMP Service Catalog" source="x_unis2_cmp_svc">74a77e941b587450c40a75561a4bcb8c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CMP Service Catalog">74a77e941b587450c40a75561a4bcb8c</sys_scope>
+            <sys_update_name>sys_choice_x_unis2_cmp_svc_catalog_monitoring</sys_update_name>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-19 18:38:53</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>monitoring</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No Monitoring</label>
+            <language>en</language>
+            <name>x_unis2_cmp_svc_catalog</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-20 14:16:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>451097e81b54f450c40a75561a4bcb95</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-20 14:16:47</sys_updated_on>
+            <value>NO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>monitoring</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vanda Monitoring</label>
+            <language>en</language>
+            <name>x_unis2_cmp_svc_catalog</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-19 18:38:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7b230bd41b987450c40a75561a4bcb18</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-20 14:15:54</sys_updated_on>
+            <value>VANDA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>monitoring</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cloud Native</label>
+            <language>en</language>
+            <name>x_unis2_cmp_svc_catalog</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-19 18:38:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fb230bd41b987450c40a75561a4bcb16</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-20 14:15:18</sys_updated_on>
+            <value>MonitorWindows</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

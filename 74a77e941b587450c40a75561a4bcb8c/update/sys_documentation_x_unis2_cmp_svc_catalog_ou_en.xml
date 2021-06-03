@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="ou" label="OU Path" language="en" table="x_unis2_cmp_svc_catalog">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>ou</element>
+            <help/>
+            <hint/>
+            <label>OU Path</label>
+            <language>en</language>
+            <name>x_unis2_cmp_svc_catalog</name>
+            <plural>OU Paths</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-05-19 17:56:19</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>a47972981b587450c40a75561a4bcb04</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>OU Path</sys_name>
+            <sys_package display_value="CMP Service Catalog" source="x_unis2_cmp_svc">74a77e941b587450c40a75561a4bcb8c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CMP Service Catalog">74a77e941b587450c40a75561a4bcb8c</sys_scope>
+            <sys_update_name>sys_documentation_x_unis2_cmp_svc_catalog_ou_en</sys_update_name>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-05-20 14:22:35</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

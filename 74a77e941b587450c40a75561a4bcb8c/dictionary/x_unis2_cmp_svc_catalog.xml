@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CMP Catalog" max_length="40" name="x_unis2_cmp_svc_catalog" sizeclass="1" type="collection">
+        <element choice="3" default="NO" label="Backup" mandatory="true" max_length="40" name="backup" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No Backup" sequence="0" value="NO"/>
+                <element inactive_on_update="false" label="Cloud Native (daily)" sequence="1" value="CNB-DAILY"/>
+                <element inactive_on_update="false" label="Cloud Native (weekly)" sequence="2" value="CNB-WEEKLY"/>
+                <element inactive_on_update="false" label="CommVault" sequence="3" value="COMMVAULT"/>
+            </choice>
+        </element>
+        <element choice="1" label="Environment" mandatory="true" max_length="40" name="environment" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Development" sequence="0" value="dev"/>
+                <element inactive_on_update="false" label="Test" sequence="1" value="qa"/>
+                <element inactive_on_update="false" label="Production" sequence="2" value="production"/>
+                <element inactive_on_update="false" label="Stage" sequence="3" value="staging"/>
+            </choice>
+        </element>
+        <element choice="3" default="NO" label="Monitoring" mandatory="true" max_length="40" name="monitoring" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No Monitoring" sequence="0" value="NO"/>
+                <element inactive_on_update="false" label="Vanda Monitoring" sequence="1" value="VANDA"/>
+                <element inactive_on_update="false" label="Cloud Native" sequence="2" value="MonitorWindows"/>
+            </choice>
+        </element>
+        <element display="true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" read_only="true" reference="sys_number" type="string" use_dynamic_default="true"/>
+        <element choice="1" label="OU Path" mandatory="true" max_length="40" name="ou" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Computers" sequence="0" value="OU=Computers,DC=cloudforte,DC=com"/>
+                <element inactive_on_update="false" label="Systems" sequence="1" value="OU=Systems,OU=CMP,DC=cloudforte,DC=com"/>
+            </choice>
+        </element>
+        <element choice="3" default="NO" label="Patching" mandatory="true" max_length="40" name="patching" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No Patching" sequence="0" value="NO"/>
+                <element inactive_on_update="false" label="Win SUS" sequence="1" value="WSUS"/>
+            </choice>
+        </element>
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+        <element label="Domain Path" max_length="255" name="sys_domain_path" type="domain_path"/>
+        <element attributes="edge_encryption_enabled=true" label="Network" max_length="40" name="u_network" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Plan" max_length="40" name="u_plan" type="string"/>
+        <index name="index">
+            <element name="sys_domain"/>
+        </index>
+        <index name="index2">
+            <element name="sys_domain_path"/>
+        </index>
+    </element>
+</database>

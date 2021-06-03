@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="blueprint_name" label="Blueprint Name" language="en" table="x_unis2_cmp_svc_morpheus">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>blueprint_name</element>
+            <help/>
+            <hint/>
+            <label>Blueprint Name</label>
+            <language>en</language>
+            <name>x_unis2_cmp_svc_morpheus</name>
+            <plural>Blueprint Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>sn_user</sys_created_by>
+            <sys_created_on>2021-06-03 13:15:34</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>1a094f8d1becf450c40a75561a4bcb67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Blueprint Name</sys_name>
+            <sys_package display_value="CMP Service Catalog" source="x_unis2_cmp_svc">74a77e941b587450c40a75561a4bcb8c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CMP Service Catalog">74a77e941b587450c40a75561a4bcb8c</sys_scope>
+            <sys_update_name>sys_documentation_x_unis2_cmp_svc_morpheus_blueprint_name_en</sys_update_name>
+            <sys_updated_by>sn_user</sys_updated_by>
+            <sys_updated_on>2021-06-03 13:15:34</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
